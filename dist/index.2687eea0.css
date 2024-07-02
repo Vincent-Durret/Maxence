@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container .game {
+  z-index: 1;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ground, .tower, .player {
+  z-index: 2;
+}
+
+.ground {
+  z-index: 2;
+  background: brown;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+}
+
+.ground2 {
+  z-index: 2;
+  background: brown;
+  width: 10%;
+  height: 2px;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+}
+
+.tower {
+  z-index: 2;
+  background: brown;
+  width: 20%;
+  height: 45px;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 30%;
+  rotate: 90deg;
+}
+
+.player {
+  z-index: 2;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.npc {
+  z-index: 2;
+  background: red;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+}
+/*# sourceMappingURL=index.2687eea0.css.map */
